@@ -1,2 +1,2 @@
-# Text-Mining_AU
+# Text Mining
 Text Mining class Asia University Exchange
