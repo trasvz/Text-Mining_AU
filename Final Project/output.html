@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Short Message Services</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    body{
+      /* background-color: grey; */
+      background-image: url("https://www.teahub.io/photos/full/239-2396188_sky-blue-background-wallpaper-aqua-backgrounds.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .center {
+      display: block;
+      float: right;
+      /* justify-content: center;
+      align-items: center; */
+    }
+    .container{
+      /* margin: auto; */
+      background-color: white;
+      /* opacity: 50%; */
+      /* border-style: round; */
+      border: 2px solid white;
+      border-radius: 12px;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+    .judulkotak{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<br>
+<div class="container">
+<br>
+  <h2 style="text-align: center;">SMS Prediction Result</h2><br>
+  <ul class="list-group">
+    <li class="list-group-item">
+      <p class="judulkotak">Input</p>
+      <!-- <p>Language: {{bahasaawal}}</p>
+      <p>Message: {{pesanawal}}</p> -->
+      <p>Language: Indonesia</p>
+      <p>Message: {{pesanawal}}</p>
+    </li>
+    <li class="list-group-item">
+      <p class="judulkotak">Output</p>
+      <!-- <p>Language: English</p> -->
+      <!-- <p>Message: </p>
+      <p>Prediction: {{prediksi}}</p> -->
+      <p>Language: {{data_translated.TargetLanguageCode}}</p>
+      <p>Message: {{data_translated.Translated}}</p>
+      <p>Prediction: {{data_translated.hasil}}</p>
+    </li>
+  </ul>
+  <br>
+  <div class="center">
+    <form action="/">
+      <button type="submit" class="btn btn-primary">Back Home</button>
+    </form>
+  </div>
+  <br><br>
+</div>
+
+</body>
+</html>
